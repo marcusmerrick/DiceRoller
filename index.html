@@ -4,20 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dice Roller</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./CSS/style.css">
 </head>
 <body>
-    <h3 class="dice"> How many dice would you like to roll?</h3>
-    <input type="text">
-    <button class="roll">Roll!</button>
-    <h3 class="sum">The sum of the rolls is:</h3>
+    <h3 class="side"> How many sides per die?</h3>
+    <input class="numSides" type="text">
+    <button id="ok">This Many!</button>
 
+    <h3 class="dice"> How many dice would you like to roll?</h3>
+    <input class="numDie" type="text">
+    <button class="roll">Roll!</button>
+
+    <h3 class="total">The sum of the rolls is:</h3>
+    <div id="total"></div>
+    
     <button class="show">Show all rolls</button>
-    <div class="sumResults">
-    <ol>
+    <div>
+    <ol class="sumResults">
         
     </ol>
     </div>
+    <button id="reset">RESET</button>
     <script src="./JS/main.js"></script>
 </body>
 </html>
